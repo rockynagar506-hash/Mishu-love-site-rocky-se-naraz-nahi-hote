@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+  <title>For Mishuu Nagar 💗</title>
+  <style>
+    :root {
+      --pink: #f7a8c4;
+      --deep: #c43d70;
+      --rose: #ffe1eb;
+      --cream: #fff9fb;
+      --ink: #593443;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 10% 10%, #ffe3ed 0, transparent 30%),
+        radial-gradient(circle at 90% 30%, #ffeef4 0, transparent 28%),
+        var(--cream);
+      line-height: 1.65;
+    }
+    .wrap { width: min(920px, 92%); margin: auto; }
+    .hero {
+      min-height: 88vh; display: grid; place-items: center; text-align: center;
+      padding: 64px 18px 48px; position: relative; overflow: hidden;
+    }
+    .hero::before, .hero::after {
+      content: "♡"; position: absolute; color: #f4a0bd; opacity: .25;
+      font-size: clamp(110px, 24vw, 240px); pointer-events: none;
+    }
+    .hero::before { top: 2%; left: -2%; transform: rotate(-18deg); }
+    .hero::after { bottom: -8%; right: -1%; transform: rotate(18deg); }
+    .hero-inner { max-width: 700px; position: relative; z-index: 1; }
+    .eyebrow {
+      display: inline-block; background: white; border: 1px solid #f8c5d7;
+      border-radius: 999px; padding: 7px 14px; font-size: .85rem; letter-spacing: .04em;
+    }
+    h1 { font-size: clamp(2.5rem, 9vw, 5.4rem); line-height: 1.05; margin: 20px 0 18px; color: var(--deep); }
+    h2 { color: var(--deep); font-size: clamp(1.65rem, 5vw, 2.3rem); line-height: 1.2; }
+    .lead { font-size: clamp(1.02rem, 3vw, 1.2rem); max-width: 590px; margin: 0 auto 24px; }
+    .btn {
+      display: inline-block; border: 0; border-radius: 999px; padding: 12px 20px;
+      font-weight: 700; text-decoration: none; cursor: pointer; font-size: 1rem;
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 22px #c43d7020; }
+    .primary { color: white; background: var(--deep); }
+    .soft { color: var(--deep); background: white; border: 1px solid #f3bfd1; }
+    section { padding: 52px 0; }
+    .section-head { text-align: center; margin: 0 auto 26px; max-width: 650px; }
+    .card {
+      background: #ffffffd9; border: 1px solid #f6d0dd; border-radius: 24px;
+      padding: clamp(20px, 5vw, 34px); box-shadow: 0 12px 40px #a93e6510;
+    }
+    .letter { font-size: 1.04rem; }
+    .signature { color: var(--deep); font-weight: 750; margin-top: 22px; }
+    .memories { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .memory {
+      background: white; border: 1px solid #f5cad9; border-radius: 18px; padding: 10px;
+      min-width: 0;
+    }
+    .photo {
+      aspect-ratio: 4 / 5; border-radius: 12px; overflow: hidden;
+      display: grid; place-items: center; text-align: center; padding: 10px;
+      background: linear-gradient(145deg, #ffe2ec, #fff4f7);
+      color: #a34a6c; font-size: .9rem;
+    }
+    .photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .caption { font-size: .9rem; padding: 10px 3px 2px; text-align: center; }
+    .note { font-size: .9rem; color: #805b69; text-align: center; margin-top: 14px; }
+    .ask { text-align: center; }
+    .ask p { max-width: 600px; margin: 0 auto 20px; }
+    .choices { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
+    #response { min-height: 2em; font-weight: 650; color: var(--deep); margin-top: 18px; }
+    footer { text-align: center; padding: 26px 12px 40px; color: #956b7c; font-size: .88rem; }
+    .tiny { font-size: .86rem; color: #805b69; }
+    @media (max-width: 650px) {
+      .memories { grid-template-columns: 1fr; }
+      .memory { display: grid; grid-template-columns: 105px 1fr; align-items: center; gap: 10px; }
+      .photo { aspect-ratio: 4 / 5; }
+      .caption { text-align: left; padding: 8px; }
+      .hero { min-height: 78vh; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">a little something, made with care 💗</span>
+      <h1>For Mishuu<br>Nagar</h1>
+      <p class="lead">Some things are hard to say in a chat, so I made you this little corner of the internet.</p>
+      <a class="btn primary" href="#letter">Open my heart ♡</a>
+      <p class="tiny">No pressure to feel or reply a certain way. Just read whenever you feel comfortable.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="letter">
+      <div class="section-head">
+        <h2>A message from my heart 💌</h2>
+        <p>Not to win an argument—just to understand each other better.</p>
+      </div>
+      <article class="card letter">
+        <p>Hey Mishuu,</p>
+        <p>I know things between us have been difficult after our fight, and I’m sorry for the hurt and stress this has caused. I don’t want to dismiss how you feel or act like one message can fix everything.</p>
+        <p>You matter to me, and I wish I had handled things with more patience and understanding. I want to listen to your side properly, without interrupting or turning it into another argument.</p>
+        <p>I still care about us, and if you genuinely want to, I’d like to try again—more calmly, honestly, and with actions that match my words. I also understand that you need to make the choice that feels right for you. You don’t owe me an answer right away.</p>
+        <p>Whatever you decide, thank you for the memories we’ve shared. I hope we can speak kindly to each other.</p>
+        <p class="signature">— From someone who cares about you ♡</p>
+      </article>
+    </section>
+
+    <section id="memories">
+      <div class="section-head">
+        <h2>Little moments, big memories 🌷</h2>
+        <p>A few reminders of the moments that mean something to me.</p>
+      </div>
+      <div class="memories">
+        <div class="memory">
+          <div class="photo"><span>Add your photo<br>to memory-1.jpg</span></div>
+          <div class="caption"><strong>One of my favourite moments</strong><br>That memory still makes me smile.</div>
+        </div>
+        <div class="memory">
+          <div class="photo"><span>Add your photo<br>to memory-2.jpg</span></div>
+          <div class="caption"><strong>A moment worth keeping</strong><br>Small things can mean a lot.</div>
+        </div>
+        <div class="memory">
+          <div class="photo"><span>Add your photo<br>to memory-3.jpg</span></div>
+          <div class="caption"><strong>Our little story</strong><br>I’m grateful for the good we shared.</div>
+        </div>
+      </div>
+      <p class="note">To add photos, follow the simple instructions below the code. Only use photos you both feel okay sharing.</p>
+    </section>
+
+    <section id="one-more-chance">
+      <div class="card ask">
+        <div style="font-size:2.4rem" aria-hidden="true">💗</div>
+        <h2>Can we talk about one more chance?</h2>
+        <p>I’d like the chance to understand what went wrong and see whether we can rebuild things together, one step at a time. No pressure—your feelings and choice matter.</p>
+        <div class="choices">
+          <a class="btn primary" href="https://wa.me/" target="_blank" rel="noopener">I’m open to talking</a>
+          <button class="btn soft" id="laterBtn" type="button">I need time</button>
+        </div>
+        <div id="response" role="status" aria-live="polite"></div>
+        <p class="tiny">The buttons don’t send me or anyone a response. They simply open WhatsApp or show a message on this page.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Made with care, not to pressure you. Take all the time you need. ♡
+  </footer>
+
+  <script>
+    document.getElementById("laterBtn").addEventListener("click", function () {
+      document.getElementById("response").textContent =
+        "That’s okay, Mishuu. Take the time you need. I’ll respect your space. 💗";
+    });
+  </script>
+</body>
+</html>
